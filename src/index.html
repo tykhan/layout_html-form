@@ -12,24 +12,31 @@
 
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+      <fieldset class="info_block">
         <legend>Personal information</legend>
         <div>
           <label for="surname">Surname:</label>
-          <input type="text" id="surname"
+          <input
+          type="text"
+          id="surname"
           required
           >
         </div>
         <div>
           <label for="name">Name:</label>
-          <input type="text" id="name"
+          <input
+          type="text"
+          id="name"
           required
           >
         </div>
         <div>
           <label for="age">How old are You?</label>
-          <input type="number" id="age"
-          value="12" min="0"
+          <input
+          type="number"
+          id="age"
+          value="12"
+          min="0"
           max="100"
           >
         </div>
@@ -43,32 +50,42 @@
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="info_block">
         <legend>Registration</legend>
         <div>
           <label for="email">E-mail:</label>
-          <input type="email" id="email"
-          placeholder="email@example.com" required
+          <input
+          type="email"
+          id="email"
+          placeholder="email@example.com"
+          required
           >
         </div>
         <div>
           <label for="password">Password:</label>
-          <input type="password" id="password"
-          minlength="7" maxlength="16"
-        required
-        >
+          <input
+            type="password"
+            id="password"
+            minlength="7"
+            maxlength="16"
+            required
+          >
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="info_block">
         <legend>An interesting fact about you!</legend>
         <div>
           Do you love cats?
-          <input type="radio" id="yes"
-          name="cats"
+          <input
+            type="radio"
+            id="yes"
+            name="cats"
           >
           <label for="yes">Yes</label>
-          <input type="radio" id="no"
+          <input
+          type="radio"
+          id="no"
           name="cats"
           >
           <label for="no">No</label>
@@ -83,7 +100,9 @@
         </div>
         <div>
           <label for="car">What are your favorite brand of cars?</label>
-          <select name="car" id="car"
+          <select
+            name="car"
+            id="car"
             multiple
           >
             <option value="bmw">BMW</option>
@@ -93,13 +112,15 @@
         </div>
         <div>
           <label for="work">How do you rate our work?</label>
-          <input type="range" id="work"
-          value="0"
+          <input
+            type="range"
+            id="work"
+            value="0"
           >
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="info_block">
         <legend>Additional info:</legend>
         <div>
           <label for="comment">Comments:</label>
